@@ -12,7 +12,7 @@ function App() {
     
       <main className="main-content">
         <Routes>
-          <Route path="/" element={<Home />}/>
+          <Route path="/MovieHub" element={<Home />}/>
           <Route path="/favorites" element={<Favorites />}/>
         </Routes>
         
