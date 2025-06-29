@@ -8,11 +8,12 @@ import NavBar from "./components/NavBar"
 function App() {
   return (
     <MovieProvider>
-      <NavBar/>
+      <NavBar/> {/*The NavBar component is called outside of the routes because we want it to be in both pages */}
     
       <main className="main-content">
         <Routes>
-          <Route path="/MovieHub" element={<Home />}/>
+          <Route path="/" element={<Home />}/> 
+          {/*We created a route with a path (represents the link) and element (represents the component page) */}
           <Route path="/favorites" element={<Favorites />}/>
         </Routes>
         
